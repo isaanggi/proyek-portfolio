@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive -->
+
+<!-- Link to the W3.CSS stylesheet -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Link to the Google Fonts stylesheet for the Poppins font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<!-- Internal CSS styles -->
+<style>
+/* Global CSS styles */
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif} /* Setting font family */
+body {font-size:16px;} /* Setting base font size */
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer} /* Styling images */
+.w3-half img:hover{opacity:1} /* Hover effect for images */
+
+/* Default sidebar color */
+.w3-sidebar {
+  background-color: #4CAF50; /* Green */
+}
+.w3-top {
+  background-color: #4CAF50; /* Green */
+}
+.w3-button {
+  background-color: #4CAF50; /* Green */
+}
+
+/* Default text color */
+.w3-text-green {
+  color: #4CAF50 !important; /* Green */
+}
+
+/* Default border color */
+hr.w3-round {
+  border-color: #4CAF50; /* Green */
+}
+
+/* Media query for screen width less than or equal to 600px */
+@media only screen and (max-width: 600px) {
+  /* Change sidebar, top bar, text, and border color to orange */
+  .w3-sidebar, .w3-top, .w3-button {
+    background-color: #FFA500 !important; /* Orange */
+  }
+  .w3-text-green {
+    color: #FFA500 !important; /* Orange */
+  }
+  hr.w3-round {
+    border-color: #FFA500 !important; /* Orange */
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Menu/Sidebar -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>My Best<br>Portfolio</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Menu di Atas saat Layar Kecil -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>My Best Portfolio</span>
+</header>
+
+<!-- Efek overlay saat membuka Sidebar di Layar Kecil -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Awal Konten -->
+<div class="w3-main" style="margin-left:300px;margin-right:40px">
+
+  <!-- About -->
+  <div class="w3-container" style="margin-top:80px" id="about">
+    <h1 class="w3-xxxlarge w3-text-green"><b>About Me</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>As a photographer, I can subconsciously communicate emotions and feelings hidden randomly in life compositions. Many consider me, an artistic poet who uses photos as his vehicle.
+      I have traveled all over the world, including Dubai, Chile, Japan, and Alaska, in the name of photography. My photographs are meant to be viewed on two levels — surface and interior.
+    </p>
+    <p>Unbeknownst to the observer, a thought crossed their minds as they looked at Saya's photos. This breeze comes in and is felt as an emotion, 
+      perhaps a lost memory—perhaps a song carried by thoughts of lost love. It's all captured in one brief moment and that's the reason why his photos make an impact.
+    </p>
+    <h3 class="w3-padding-16">My Skill Sets</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div><br>
+
+    <h3 class="w3-padding-16">My Experiences</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">65+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">200+</span><br>
+        Meetings
+      </div>
+    </div>
+  </div>
+<!-- Akhir Konten -->
+</div>  
+
+<!-- Container Bawah / Footer-->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+<script>
+// Script untuk buka dan tutup Sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
